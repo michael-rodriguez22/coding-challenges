@@ -1,7 +1,3 @@
-# Codewell Challenges
-
-A collection of short challenges from [https://www.codewell.cc/](https://www.codewell.cc/). These are simple sites created from scratch with the goal of matching mockups as accurately as possible.
-
 ## Web Developer Portfolio
 
 A sample portfolio site for an accomplished web developer. Features a drop down mobile nav and highlighted active nav links.
