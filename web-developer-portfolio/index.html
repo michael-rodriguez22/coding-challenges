@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <title>Jonathan Specter</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container centered">
+        <a class="logo" href="#">Jonathan Specter</a>
+
+        <!-- contains nav list -->
+        <div id="header-list-parent"></div>
+
+        <!-- contains contact button -->
+        <div id="header-button-parent"></div>
+
+        <button id="menu-toggle" aria-label="toggle menu">
+          <img src="./assets/Icons/Hamburger Menu.svg" alt="menu toggle" />
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Page Content -->
+    <main>
+      <!-- Mobile Nav Menu -->
+      <nav class="mobile-nav">
+        <!-- contains nav list -->
+        <div id="mobile-list-parent" class="container"></div>
+
+        <!-- contains contact button -->
+        <div id="mobile-button-parent"></div>
+
+        <!-- contains social icons -->
+        <div id="mobile-icons-parent"></div>
+      </nav>
+
+      <!-- Brand Statement -->
+      <section class="container">
+        <h1>Helping companies build better, scalable software.</h1>
+        <p class="text-dim">
+          Award-winning web developer and author, with over 15+ years of working
+          experience with fortune 500 companies like Apple, Google, Facebook,
+          and more.
+        </p>
+      </section>
+
+      <!-- Company Logos -->
+      <section class="container">
+        <div class="company-logos centered">
+          <img
+            class="company-logo-1"
+            src="./assets/Logos/Walmart.svg"
+            alt="Walmart logo"
+          />
+          <img
+            class="company-logo-2"
+            src="./assets/Logos/JP Morgan.svg"
+            alt="JP Morgan logo"
+          />
+          <img
+            class="company-logo-3"
+            src="./assets/Logos/Visa.svg"
+            alt="Visa logo"
+          />
+          <img
+            class="company-logo-4"
+            src="./assets/Logos/Tinder.png"
+            alt="Tinder logo"
+          />
+          <img
+            class="company-logo-5"
+            src="./assets/Logos/Samsung.svg"
+            alt="Samsung logo"
+          />
+          <img
+            class="company-logo-6"
+            src="./assets/Logos/Verizon.svg"
+            alt="Verizon logo"
+          />
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="container">
+        <div class="section-grid">
+          <div class="project">
+            <div class="img-wrapper">
+              <img
+                src="./assets/Project Pictures/Spense.png"
+                alt="Spense.com landing page"
+              />
+            </div>
+            <h2>Spense.com →</h2>
+            <p class="text-dim">
+              Rethinking the way writers get paid, an open-souce platform
+              designed to help writers focus more on writing, and less on
+              <span class="italic">when</span> and
+              <span class="italic">how</span> they'll get paid. Project in
+              collaboration with Codewell.cc
+            </p>
+          </div>
+
+          <div class="project">
+            <div class="img-wrapper">
+              <img
+                src="./assets/Project Pictures/YelpCamp.png"
+                alt="YelpCamp.com landing page"
+              />
+            </div>
+            <h2>YelpCamp.com →</h2>
+            <p class="text-dim">
+              Allowing backpack travelers to perfectly plan their trip through
+              an open-source platform similar to TripAdvisor. With over 1m MAU,
+              YelpCamp has been thr crowd's favorite in 2021.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="About" class="bg-medium">
+        <div class="container centered section-grid">
+          <div class="about-group">
+            <h2>A co-founder at one of the world's largest communities.</h2>
+            <p class="text-dim">
+              The combined experience I have working at the top Fortune 500
+              companies has allowed me to develop a skillset that helps me in
+              not just development, but in every aspect of any business.
+            </p>
+            <p class="text-dim">
+              I'm proud to announce that I am now working at one of the world's
+              largest communities teaching young minds how to
+              <span class="italic">sell</span> yourself as a developer and open
+              them to a whole new world of opportunities.
+            </p>
+          </div>
+          <div class="about-group">
+            <p class="text-dim">
+              As a developer, you have everything available to you and all
+              that's holding you back is yourself.
+            </p>
+            <p class="text-dim">
+              A qoute I live by perfectly illustrates what I mean.
+            </p>
+            <p class="text-dim">
+              "How big would you dream if you <span class="bold">knew</span> you
+              wouldn't fail?" You've already gone through the hardest parts of
+              being a developer, it's time to elevate your skills and become a
+              leader in something you're
+              <span class="italic">passionate</span> about.
+            </p>
+            <p class="text-dim">
+              I'm happy to chat over coffee sometime about how I can help your
+              company.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="Contact" class="container centered">
+        <div class="contact-group">
+          <h2>Interested in working with me?</h2>
+          <p class="text-dim">
+            I'm active on all social media platforms below, but you can also
+            send me an email and I will get back to you within 24-48 hours.
+          </p>
+          <a href="#Contact" class="contact-button">Get in touch</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-medium">
+      <div class="container centered">
+        <a class="logo" href="#">Jonathan Specter</a>
+        <!-- contains social icons -->
+        <div id="footer-icons-parent"></div>
+      </div>
+    </footer>
+
+    <!-- Mobile Nav Controls -->
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
