@@ -1,0 +1,33 @@
+/* Resets, Font, Colors */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+  --accent-blue: #4977ea;
+  --bg-medium: #f9f4e8;
+  --text-medium: #92908b;
+  --gradient-start: #edbd6b;
+  --gradient-end: #eb5f7c;
+  font-family: "Lato", sans-serif;
+  color: var(--text-dark);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
