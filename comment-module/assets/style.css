@@ -10,7 +10,7 @@
 }
 
 :root {
-  --text-dark: #1e1e1e;
+  --text-dark: #000;
   --text-dim: #aaa;
   --bg-light: #fff;
   font-family: "Rubik", sans-serif;
@@ -20,7 +20,6 @@
 html,
 body {
   height: 100%;
-  scroll-behavior: smooth;
 }
 
 ol,
@@ -75,8 +74,9 @@ body {
   background-color: var(--bg-light);
   border-radius: 8px;
   margin: auto;
-  width: 90%;
-  max-width: 90%;
+  width: 94%;
+  max-width: 94%;
+  box-shadow: 0px 4px 8px #00000022;
 }
 
 .card-container {
@@ -85,7 +85,56 @@ body {
 
 @media screen and (min-width: 768px) {
   .card {
-    width: 690px;
-    max-width: 690px;
+    width: 720px;
+    max-width: 720px;
   }
+}
+
+/* Comment */
+.comment {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 8px 12px;
+  margin-top: 18px;
+}
+
+.comment + .comment {
+  margin-top: 44px;
+}
+
+.comment-side {
+  grid-row: 1 / span 4;
+  grid-column: 1 / 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-side > img {
+  width: 100%;
+}
+
+.comment-side > span {
+  width: 2px;
+  height: 100%;
+  margin: 10px auto 0;
+  background-color: var(--text-dim);
+}
+
+.comment-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.comment-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.vote > img,
+.comment-side > img,
+.comment-header > h3,
+.comment-footer > span {
+  cursor: pointer;
 }
