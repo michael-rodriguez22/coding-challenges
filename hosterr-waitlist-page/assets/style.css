@@ -67,6 +67,17 @@ header {
   );
 }
 
+.nav-links > a,
+.call-to-action > a:first-child {
+  color: var(--text-medium);
+  transition: color 0.4s ease-in-out;
+}
+
+.nav-links > a.active,
+.call-to-action > a:first-child.active {
+  color: #000;
+}
+
 .btn-accent {
   color: #fff;
   padding: 0.8rem;
