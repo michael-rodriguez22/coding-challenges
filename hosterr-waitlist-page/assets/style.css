@@ -40,7 +40,7 @@ a {
   margin: 2vh auto;
 }
 
-/* Header & Dropdown Menu */
+/* Header */
 header {
   display: flex;
   align-items: center;
@@ -80,6 +80,61 @@ header > .call-to-action {
   display: none;
 }
 
+/* Animated Hamburger Icon */
+#menu-toggle {
+  width: 1.6rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 1.6rem;
+  height: 4px;
+  background: #000;
+  transition: all 0.4s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 1.6rem;
+  height: 4px;
+  position: absolute;
+  background: #000;
+  transition: all 0.4s ease-in-out;
+}
+
+.hamburger::before {
+  transform: translateY(-8px);
+}
+
+.hamburger::after {
+  transform: translateY(8px);
+}
+
+.hamburger.open {
+  transform: translateX(50px);
+  background: transparent;
+}
+
+.hamburger.open::before {
+  height: 3px;
+  border-radius: 8px;
+  transform: rotate(-45deg) translate(-35px, -35px);
+}
+
+.hamburger.open::after {
+  height: 3px;
+  border-radius: 8px;
+  transform: rotate(45deg) translate(-35px, 35px);
+}
+
+/* Animated Dropdown Menu */
 .dropdown-menu {
   display: flex;
   max-height: 0;
@@ -107,6 +162,7 @@ header > .call-to-action {
   flex: 1;
 }
 
+/* Tablets */
 @media screen and (min-width: 425px) {
   .dropdown-menu > .vertical-rule {
     width: 2px;
@@ -121,6 +177,7 @@ header > .call-to-action {
   }
 }
 
+/* Large Screens */
 @media screen and (min-width: 1024px) {
   header > .nav-links,
   header > .call-to-action {
