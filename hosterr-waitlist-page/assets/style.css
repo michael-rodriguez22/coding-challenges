@@ -185,7 +185,36 @@ header > .call-to-action {
 
 /* Hero */
 .hero {
-  /*  */
+  padding: 3rem 0;
+}
+
+.hero > .container {
+  width: 69%;
+  margin: 0 auto;
+  max-width: 400px;
+  position: relative;
+}
+
+.shapes > img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.shapes > img:nth-child(1) {
+  transform: rotate(-45deg);
+}
+
+.shapes > img:nth-child(2) {
+  transform: rotate(-30deg);
+}
+
+.shapes > img:nth-child(3) {
+  transform: rotate(-15deg);
+}
+
+.hero > .container > img {
+  width: 100%;
 }
 
 /* Main Content */
@@ -290,6 +319,14 @@ footer {
 
   main {
     flex-direction: row-reverse;
+  }
+
+  .hero {
+    flex: 1;
+  }
+
+  .content {
+    flex: 1;
   }
 
   .subscribe {
