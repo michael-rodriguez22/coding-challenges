@@ -72,13 +72,15 @@ header {
 }
 
 .nav-links > a,
-.call-to-action > a:first-child {
+.call-to-action > a:first-child,
+.social-links > a {
   color: var(--text-medium);
   transition: color 0.4s ease-in-out;
 }
 
 .nav-links > a.active,
-.call-to-action > a:first-child.active {
+.call-to-action > a:first-child.active,
+.social-links > a.active {
   color: #000;
 }
 

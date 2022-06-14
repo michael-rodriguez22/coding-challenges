@@ -20,7 +20,12 @@ const navLinks = Array.from(document.querySelectorAll(".nav-links > a"))
 
 const signInLinks = document.querySelectorAll(".call-to-action > a:first-child")
 
+const socialLinks = Array.from(document.querySelectorAll(".social-links > a"))
+
 signInLinks.forEach(link => navLinks.push(link))
+socialLinks.forEach(link => navLinks.push(link))
+
+console.log(navLinks)
 
 const handleActiveNavLink = () => {
   navLinks.forEach(link => {
