@@ -1,5 +1,13 @@
 # Note Taker
 
+For this challenge I was tasked with implementing the back end for a note taking app. The [starter code](https://github.com/coding-boot-camp/miniature-eureka) contained a public directory with html pages, a stylesheet, and a script.js file which made GET, POST, and DELETE requests to nonexistent API endpoints. I configured an Express server, served the html pages from their respective routes, and implemented the missing API routes.
+
+Screen recording of [deployed site](https://mr22-note-taker.herokuapp.com/) in use:
+
+![demo gif](./demo.gif)
+
+---
+
 ## User Story
 
 ```
@@ -25,3 +33,21 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
+
+## Technical Criteria
+
+```
+- Application front end must connext to an Express.js back end
+- Application must store notes with unique IDs in a JSON file
+- Application must be deployed to Heroku at a live URL
+- Application loads with no errors
+- Application console is free of errors
+```
+
+---
+
+Mockup images:
+
+![mockup](mockup.png)
+
+![mockup2](mockup2.png)
