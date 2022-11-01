@@ -2,7 +2,7 @@
 
 For this challenge I was tasked with implementing the back end for a note taking app. The [starter code](https://github.com/coding-boot-camp/miniature-eureka) contained a public directory with html pages, a stylesheet, and a script.js file which made GET, POST, and DELETE requests to nonexistent API endpoints. I configured an Express server, served the html pages from their respective routes, and implemented the missing API routes.
 
-Screen recording of [deployed site](https://mr22-note-taker.herokuapp.com/) in use:
+### [Deployed Site](https://mr22-note-taker.herokuapp.com/) in use:
 
 ![demo gif](./demo.gif)
 
@@ -46,7 +46,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ---
 
-Mockup images:
+### Mockup Images:
 
 ![mockup](mockup.png)
 
