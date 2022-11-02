@@ -4,15 +4,26 @@
   "description": "Command Line Interface that creates a page based off entered employee information",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "TDD",
+    "Test Driven Development",
+    "OOP",
+    "Object Oriented Programming",
+    "Jest",
+    "Inquirer",
+    "CLI",
+    "Command Line Interface",
+    "ES6"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.2.2"
   },
   "dependencies": {
-    "inquirer": "^9.1.4"
+    "inquirer": "^8.2.5"
   }
 }
