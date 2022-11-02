@@ -14,7 +14,7 @@ test("creates Intern object", () => {
 })
 
 test("getter functions return correct values", () => {
-  const intern = new Intern(name, id, email)
+  const intern = new Intern(name, id, email, school)
 
   expect(intern.getName()).toEqual(name)
   expect(intern.getId()).toEqual(id)

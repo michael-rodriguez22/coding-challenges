@@ -14,7 +14,7 @@ test("creates Engineer object", () => {
 })
 
 test("getter functions return correct values", () => {
-  const engineer = new Engineer(name, id, email)
+  const engineer = new Engineer(name, id, email, github)
 
   expect(engineer.getName()).toEqual(name)
   expect(engineer.getId()).toEqual(id)
