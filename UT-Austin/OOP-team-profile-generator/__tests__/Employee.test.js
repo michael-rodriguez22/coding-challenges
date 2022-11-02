@@ -8,7 +8,7 @@ const employeeData = {
 
 const { name, id, email } = employeeData
 
-test("tests creation of Employee object", () => {
+test("creates Employee object", () => {
   const employee = new Employee(name, id, email)
 
   expect(employee.name).toEqual(name)
@@ -22,11 +22,6 @@ test("getter functions return correct values", () => {
   expect(employee.getName()).toEqual(name)
   expect(employee.getId()).toEqual(id)
   expect(employee.getEmail()).toEqual(email)
-})
-
-test("get role returns Employee", () => {
-  const employee = new Employee(name, id, email)
-
   expect(employee.getRole()).toEqual("Employee")
 })
 
