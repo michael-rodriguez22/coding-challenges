@@ -1,4 +1,4 @@
-const Employee = require("../lib")
+const { Employee } = require("../lib")
 
 const employeeData = {
   name: "Michael Rodriguez",
